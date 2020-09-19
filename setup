@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Initialize everything on a new machine.
+# Assumes that homebrew (on mac) and stow have already been installed.
+
+TARGET="${HOME}"
+
+cd "$(dirname "${BASH_SOURCE}")"
+
+for item in {zsh,git}; do
+    stow -t $TARGET $item;
+done;
