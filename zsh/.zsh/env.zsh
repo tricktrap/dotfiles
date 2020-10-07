@@ -1,5 +1,8 @@
 # Environment updates
 
+# Wire up GPG
+export GPG_TTY=$(tty)
+
 # Just jenv things.
 eval "$(jenv init -)"
 
