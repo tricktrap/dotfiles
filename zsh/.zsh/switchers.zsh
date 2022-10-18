@@ -6,11 +6,11 @@ then
   eval "$(jenv init -)"
 fi
 
-if command -v sdk &> /dev/null
+if [ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]
 then
   export SDKMAN_DIR="$HOME/.sdkman"
 
-  [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+  source "${SDKMAN_DIR}/bin/sdkman-init.sh"
   #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 fi
 
