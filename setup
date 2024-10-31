@@ -7,6 +7,6 @@ TARGET="${HOME}"
 
 cd "$(dirname "${BASH_SOURCE}")"
 
-for item in {zsh,git}; do
+for item in {zsh,git,config}; do
     stow -t $TARGET $item;
 done;
