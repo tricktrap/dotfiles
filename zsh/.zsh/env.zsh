@@ -10,5 +10,9 @@ done;
 
 # Add local bin
 export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 export SPARK_LOCAL_IP="127.0.0.1"
+
+# Enable command completion
+autoload -U compinit; compinit
