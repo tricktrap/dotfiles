@@ -1,0 +1,9 @@
+{
+  "model": "haiku",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.js",
+    "padding": 2
+  },
+  "autoUpdatesChannel": "latest"
+}
